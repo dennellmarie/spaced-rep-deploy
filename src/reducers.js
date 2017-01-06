@@ -6,7 +6,7 @@ import {
   POPULATE_QUESTIONS
 } from './actions';
 
-import cookie from 'react-cookie'
+import cookie from 'react-cookie';
 
 export const initialState = {
   questions: [],
@@ -15,7 +15,7 @@ export const initialState = {
   isLoggedIn: false,
   accessToken: undefined,
   score: 0
-}
+};
 
 export const Reducer = function(state=initialState, action={}) {
   switch(action.type) {
@@ -53,5 +53,4 @@ export const Reducer = function(state=initialState, action={}) {
     default:
       return state;
   }
-
-}
+};

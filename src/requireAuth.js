@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 export default function(ComposedComponent) {
 	class Authentication extends Component {
@@ -31,4 +31,4 @@ export default function(ComposedComponent) {
 	} 
 
 	return connect(mapStateToProps)(Authentication)
-}
+};

@@ -59,7 +59,7 @@ class Quiz extends Component {
               </div>
             </div>
   }
-}
+};
 
 function mapStateToProps(state) {
   return {
@@ -70,6 +70,6 @@ function mapStateToProps(state) {
     isCorrect: state.isCorrect,
     score : state.score
   }
-}
+};
 
-export default connect(mapStateToProps, actions)(Quiz)
+export default connect(mapStateToProps, actions)(Quiz);

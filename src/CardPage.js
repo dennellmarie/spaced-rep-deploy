@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import * as actions from './actions';
-import PrintCard from './PrintCard'
-import StudyCard from './StudyCard'
+import PrintCard from './PrintCard';
+import StudyCard from './StudyCard';
 
 var questions = [
     {
@@ -196,7 +196,6 @@ export class CardPage extends Component {
 	}
 
 	render() {
-		//console.log('STATE:::', this.state.questions)
 		return  <div className='card-page'>
               <div className='card-header'>
       					{this.props.printable == 'true' ?
@@ -216,7 +215,7 @@ export class CardPage extends Component {
             </div>
 	}
 
-}
+};
 
 export function PrintCardPage() {return <CardPage printable="true" />;}
 

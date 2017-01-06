@@ -9,7 +9,7 @@ class App extends Component {
         {this.props.children}
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;

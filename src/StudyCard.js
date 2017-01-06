@@ -33,8 +33,8 @@ export default class CardPage extends Component {
 				</div>
 	
 	}
-}
+};
 
-//initial state question
-//a way of toggling from question to answer
-//renderer acknowleding which on display
+// initial state question
+// a way of toggling from question to answer
+// renderer acknowleding which on display

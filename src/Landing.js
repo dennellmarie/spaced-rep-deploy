@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import * as actions from './actions.js';
 import { connect } from 'react-redux';
-import cookie from 'react-cookie'
+import cookie from 'react-cookie';
 
-const AUTH_URL = "http://localhost:3090/auth/google/"
+const AUTH_URL = "http://localhost:3090/auth/google/";
 // const AUTH_URL = "https://intense-wildwood-92655.herokuapp.com/auth/google"
 
 class Landing extends Component {
@@ -43,12 +43,12 @@ class Landing extends Component {
 	       		</div>
            </div>
   }
-}
+};
 
 function mapStateToProps(state) {
 	return {
 		isLoggedIn : state.isLoggedIn
 	}
-}
+};
 
 export default connect(mapStateToProps, actions)(Landing);
